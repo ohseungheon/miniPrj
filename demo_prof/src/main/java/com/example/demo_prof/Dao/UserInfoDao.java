@@ -13,5 +13,5 @@ public interface UserInfoDao {
 	public List<UserInfoDto> getUserInfoList();
 	public int saveUserInfo(UserInfoDto userInfoDto );
 	public int deleteUserInfo(String uno);
-	
+	 
 }
