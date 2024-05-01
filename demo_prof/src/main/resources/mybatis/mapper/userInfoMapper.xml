@@ -17,10 +17,8 @@
 		VALUES (#{param1}, #{param2}, #{param3} )
 	</insert>
 	
-	
 	<delete id="deleteUserInfo">
 		DELETE FROM userInfo WHERE uno = #{uno}
-		
 	</delete>
 	
 </mapper>
