@@ -1,6 +1,8 @@
 package com.example.demo_prof.domain;
 
+import lombok.Data;
 
+@Data
 public class UserInfoDto {
 	
 	private int uno;
