@@ -48,5 +48,4 @@ public class MyController {
 		dao.deleteUserInfo(uno); 
 		return "redirect:list";
 	}
-	
 }
