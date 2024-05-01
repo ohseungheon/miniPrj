@@ -1,0 +1,26 @@
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.example.demo_prof.Dao.UserInfoDao">
+	<select id="geUserInfo" >
+		SELECT * FROM  userInfo WHERE uno = #{uno}
+	</select>
+	
+	<select id="getUserInfoList" resultType="com.example.demo_prof.domain.UserInfoDto">
+		SELECT * FROM  userInfo
+	</select>
+	
+	<insert id="saveUserInfo">
+		INSERT INTO userInfo (name, age, address)
+		VALUES (#{param1}, #{param2}, #{param3} )
+	</insert>
+	
+	
+	<delete id="deleteUserInfo">
+		DELETE FROM userInfo WHERE uno = #{uno}
+		
+	</delete>
+	
+</mapper>
