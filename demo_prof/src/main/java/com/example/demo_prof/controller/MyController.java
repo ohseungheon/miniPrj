@@ -12,8 +12,8 @@ import lombok.extern.log4j.Log4j2;
 public class MyController {
 
 	@RequestMapping("/")
-	public @ResponseBody String root() {
-		return "hie";
+	public String root() {
+		return "main";
 	}
 	
 	 
