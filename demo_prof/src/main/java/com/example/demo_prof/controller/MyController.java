@@ -13,7 +13,7 @@ public class MyController {
 
 	@RequestMapping("/")
 	public @ResponseBody String root() {
-		return "hi";
+		return "hie";
 	}
 	
 	
